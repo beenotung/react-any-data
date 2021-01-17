@@ -21,6 +21,8 @@ class Counter {
 
 registerMutableMethodsByClassConstructor(Counter, ['inc', 'dec']);
 
+export let testing: any = {};
+
 function DemoNestedState() {
   const state = useStateProxy({
     id: 1,
@@ -39,6 +41,7 @@ function DemoNestedState() {
     ]),
     counter: new Counter(),
   });
+  testing.state = state;
   return (
     <div className="DemoNestedState">
       <h1>Demo Nested State</h1>
