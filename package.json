@@ -1,6 +1,6 @@
 {
   "name": "react-any-data",
-  "version": "0.2.0",
+  "version": "0.0.1",
   "description": "Using Proxy API to auto dispatch React.useState",
   "keywords": [
     "proxy",
