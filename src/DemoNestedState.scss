@@ -1,0 +1,40 @@
+.DemoNestedState {
+  margin: 8px;
+
+  .color-guide {
+    display: flex;
+    gap: 8px;
+    padding: 4px;
+  }
+
+  .content {
+    display: flex;
+    gap: 8px;
+  }
+
+  code {
+    outline: 1px solid chocolate;
+    white-space: pre;
+  }
+
+  .object {
+    outline: 1px solid orange;
+  }
+
+  .array {
+    outline: 1px solid red;
+  }
+
+  .set {
+    outline: 1px solid springgreen;
+  }
+
+  .map {
+    outline: 1px solid magenta;
+  }
+
+  .function {
+    outline: 1px solid firebrick;
+  }
+}
+
