@@ -4,7 +4,7 @@ React component as viewer and editor for general data type.
 
 [![npm Package Version](https://img.shields.io/npm/v/react-any-data?maxAge=3600)](https://www.npmjs.com/package/react-any-data)
 
-Inspired from [s-json](https://github.com/beenotung/s-json);
+Inspired from [s-data](https://github.com/beenotung/s-data);
 works best with [use-state-proxy](https://github.com/beenotung/use-state-proxy).
 
 Demo: https://react-any-data-demo.surge.sh/
