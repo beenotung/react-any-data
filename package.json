@@ -11,8 +11,9 @@
   ],
   "author": "Beeno Tung <aabbcc1241@yahoo.com.hk> (https://beeno-tung.surge.sh)",
   "license": "BSD-2.0",
-  "main": "dist/Data.js",
-  "types": "dist/Data.d.ts",
+  "main": "dist/cjs/Data.js",
+  "types": "dist/cjs/Data.d.ts",
+  "module": "dist/esm/Data.js",
   "files": [
     "src",
     "dist"
@@ -25,7 +26,9 @@
     "restore": "node scripts/restore.js",
     "clean": "rimraf dist",
     "prebuild": "run-p clean format",
-    "build": "tsc -p tsconfig.build.json",
+    "build": "run-p build:cjs build:esm",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
     "test": "react-scripts test",
     "build:demo": "npm run prestart && react-scripts build",
     "preupload": "npm run build:demo",
