@@ -1,6 +1,6 @@
 {
   "name": "react-any-data",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "React component as viewer and editor for general data type",
   "keywords": [
     "proxy",
