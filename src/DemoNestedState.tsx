@@ -40,6 +40,8 @@ function DemoNestedState() {
       [2, 'two'],
     ]),
     counter: new Counter(),
+    null: null,
+    undefined: undefined,
   });
   testing.state = state;
   return (

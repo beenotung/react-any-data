@@ -22,6 +22,9 @@ function getType(value: any): DataType {
     case 'string':
       return value.length < 20 ? 'text' : 'textarea';
     case 'object':
+      if (value === null) {
+        return 'text';
+      }
       if (Array.isArray(value)) {
         return 'array';
       }
