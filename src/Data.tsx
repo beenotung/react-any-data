@@ -482,7 +482,7 @@ function InputData(props: DataProps) {
       <input
         readOnly={props.readOnly}
         type={type}
-        value={value}
+        value={value ?? ''}
         onChange={(e) => {
           state[name] = (function () {
             switch (type) {
